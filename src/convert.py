@@ -10,7 +10,7 @@ def convert_and_upload_supervisely_project(
     api: sly.Api, workspace_id: int, project_name: str
 ) -> sly.ProjectInfo:
     dataset_path = (
-        "/home/alex/DATASETS/TODO/Photometric stereo/DS_10283_3280/PS Plant training data set"
+        "/home/iwatkot/supervisely/ninja-datasets/psplant"
     )
     images_folder = "Grayscale images"
     masks_folder = "Ground truth (leaf labels)"
