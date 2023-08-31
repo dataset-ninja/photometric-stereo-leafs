@@ -13,9 +13,9 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "Photometric stereo leafs"
-PROJECT_NAME_FULL: Optional[str] = "Photometric stereo training data set with annotated leaf masks"
-
+PROJECT_NAME: str = "Photometric Stereo Leafs"
+PROJECT_NAME_FULL: Optional[str] = "Photometric Stereo Training Data Set with Annotated Leaf Masks"
+HIDE_DATASET = True  # set False when 100% sure about repo quality
 ##################################
 # * After uploading to instance ##
 ##################################
@@ -37,7 +37,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://datashare.ed.ac.uk/handle/10283/3280"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 550339
+PREVIEW_IMAGE_ID: int = None
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/photometric-stereo-leafs"
@@ -83,6 +83,7 @@ def get_settings():
     settings = {
         "project_name": PROJECT_NAME,
         "license": LICENSE,
+        "hide_dataset": HIDE_DATASET,
         "applications": APPLICATIONS,
         "category": CATEGORY,
         "cv_tasks": CV_TASKS,
