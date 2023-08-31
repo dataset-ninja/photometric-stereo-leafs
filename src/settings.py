@@ -34,10 +34,10 @@ RELEASE_DATE: Optional[str] = "2019-03-25"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = "https://datashare.ed.ac.uk/handle/10283/3280"
+HOMEPAGE_URL: str = "https://datashare.ed.ac.uk/handle/10283/3199"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 2660249
+PREVIEW_IMAGE_ID: int = 2660736
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/photometric-stereo-leafs"
@@ -46,22 +46,35 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/photometric-stereo-leafs"
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[
-    Union[str, dict]
-] = "https://datashare.ed.ac.uk/bitstream/handle/10283/3280/PS%20Plant%20training%20data%20set.zip?sequence=4&isAllowed=y"
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = {
+    "Photometric stereo training data set with annotated leaf masks": "https://datashare.ed.ac.uk/download/DS_10283_3280.zip",
+    "Photometric stereo test data set": "https://datashare.ed.ac.uk/download/DS_10283_3279.zip",
+}
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
-PAPER: Optional[str] = "https://academic.oup.com/gigascience/article/8/5/giz056/5498634?login=false"
+PAPER: Optional[str] = {
+    "Research Paper (main)": "https://academic.oup.com/gigascience/article/8/5/giz056/5498634?login=false",
+    "Dataset description": "https://datashare.ed.ac.uk/bitstream/handle/10283/3280/PS-Plant%20training%20data%20set%20description.pdf?sequence=3&isAllowed=y",
+}
 CITATION_URL: Optional[str] = "https://datashare.ed.ac.uk/handle/10283/3280"
 AUTHORS: Optional[List[str]] = ["Scorza, Livia", "Bernotas, Gytis", "McCormick, Alistair"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "University of Edinburgh, Scotland"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.ed.ac.uk/"
 
-SLYTAGSPLIT: Optional[Dict[str, List[str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, List[str]]] = {
+    "__PRETEXT__": "Decomposed multi-channel *train* images are grouped by unique ***im_id*** into 221 groups with 6 layers each: ***Albedo images***, ***Surface normal map images***, ***Grayscale images***, ***Shadow images***, ***Composite images***, and ***Foreground_Background images***",
+    "test images layers": [
+        "Binary masks",
+        "CroppedAlbedo",
+        "CroppedComposite",
+        "CroppedGrayscale",
+    ],
+    "__POSTTEXT__": "Additionally, images metadata contains information about ***leaf number***, ***plant number***, ***lights***, ***region of interest***, ***days after germination***,***interval between imaging***, ***growth light intensity***, ***growth temperature***, and the ***growth light intensity***",
+}
 TAGS: List[str] = None
 
 ##################################
