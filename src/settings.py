@@ -15,7 +15,7 @@ from dataset_tools.templates import (
 ##################################
 PROJECT_NAME: str = "Photometric Stereo Leafs"
 PROJECT_NAME_FULL: Optional[str] = "Photometric Stereo Training Data Set with Annotated Leaf Masks"
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 ##################################
 # * After uploading to instance ##
 ##################################
