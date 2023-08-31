@@ -21,7 +21,7 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 ##################################
 LICENSE: License = License.CC_BY_4_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Research.Biological(), Research.Genetic()]
-CATEGORY: Category = Category.Biology()
+CATEGORY: Category = Category.Biology(extra=Category.Agriculture())
 
 CV_TASKS: List[CVTask] = [
     CVTask.InstanceSegmentation(),
