@@ -56,7 +56,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 PAPER: Optional[str] = {
-    "Research Paper (main)": "https://academic.oup.com/gigascience/article/8/5/giz056/5498634?login=false",
+    "Research paper": "https://academic.oup.com/gigascience/article/8/5/giz056/5498634?login=false",
     "Dataset description": "https://datashare.ed.ac.uk/bitstream/handle/10283/3280/PS-Plant%20training%20data%20set%20description.pdf?sequence=3&isAllowed=y",
 }
 CITATION_URL: Optional[str] = "https://datashare.ed.ac.uk/handle/10283/3280"
