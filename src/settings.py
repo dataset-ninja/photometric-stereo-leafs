@@ -57,7 +57,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 PAPER: Optional[str] = {
     "Research paper": "https://academic.oup.com/gigascience/article/8/5/giz056/5498634?login=false",
-    "Dataset description": "https://datashare.ed.ac.uk/bitstream/handle/10283/3280/PS-Plant%20training%20data%20set%20description.pdf?sequence=3&isAllowed=y",
+    "Dataset Description": "https://datashare.ed.ac.uk/bitstream/handle/10283/3280/PS-Plant%20training%20data%20set%20description.pdf?sequence=3&isAllowed=y",
 }
 CITATION_URL: Optional[str] = "https://datashare.ed.ac.uk/handle/10283/3280"
 AUTHORS: Optional[List[str]] = ["Scorza, Livia", "Bernotas, Gytis", "McCormick, Alistair"]
