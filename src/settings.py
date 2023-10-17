@@ -19,7 +19,7 @@ HIDE_DATASET = False  # set False when 100% sure about repo quality
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.CC_BY_4_0()
+LICENSE: License = License.CC_BY_4_0(source_url="https://datashare.ed.ac.uk/handle/10283/3280")
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Research.Biological(), Research.Genetic()]
 CATEGORY: Category = Category.Biology(extra=Category.Agriculture())
 
