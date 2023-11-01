@@ -61,6 +61,7 @@ PAPER: Optional[str] = {
 }
 CITATION_URL: Optional[str] = "https://datashare.ed.ac.uk/handle/10283/3280"
 AUTHORS: Optional[List[str]] = ["Scorza, Livia", "Bernotas, Gytis", "McCormick, Alistair"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["alistair.mccormick@ed.ac.uk"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "University of Edinburgh, Scotland"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.ed.ac.uk/"
@@ -117,6 +118,7 @@ def get_settings():
     settings["paper"] = PAPER
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
