@@ -1,6 +1,6 @@
 Dataset **Photometric Stereo Leafs** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/G/d/Fx/8jjbpsmD5FJYX5cI6Nx504lc4lKu0oMmdauwOEVicfJXOIQcTBdCXuuz1qljUB0hmFu654o7HL3mqerSm1967z5sCtWkZZPJxFjPxq7b1zBT2Rz7tpuDgmUj1LXY.tar)
+ [Download](https://www.dropbox.com/scl/fi/wk29xvt170g25bgi0ni79/photometric-stereo-leafs-DatasetNinja.tar?rlkey=xzj3hqwappnf3uzth2uaceyv8&dl=1)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
