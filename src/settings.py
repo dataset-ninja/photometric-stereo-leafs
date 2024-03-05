@@ -76,7 +76,7 @@ SLYTAGSPLIT: Optional[Dict[str, List[str]]] = {
     ],
     "__POSTTEXT__": "Additionally, images metadata contains information about ***leaf number***, ***plant number***, ***lights***, ***region of interest***, ***days after germination***,***interval between imaging***, ***growth light intensity***, ***growth temperature***, and the ***growth light intensity***",
 }
-TAGS: List[str] = None
+TAGS: List[str] = ['multi-view']
 
 ##################################
 ###### ? Checks. Do not edit #####
